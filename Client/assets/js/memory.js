@@ -1,18 +1,17 @@
 const grid = document.querySelector('.grid');
 const spanPlayer = document.querySelector('.player');
 var timer = 0;
-
 const characters = [
-    'alok',
-    'bicho',
-    'dog',
-    'gato',
-    'lindao',
-    'ok',
-    'picapau',
-    'pikachu',
-    'serio',
-    'sherek',
+    'camera',
+    'carta',
+    'estante',
+    'lupa',
+    'maquina',
+    'pena',
+    'relogio',
+    'telefone',
+    'toca-disco',
+    'veio',
 ];
 
 const createElement = (tag, className) => {
@@ -31,27 +30,27 @@ const checkEndGame = () => {
         if (disabledCards.length == 20) {
             grid.innerHTML = "";
             clearInterval(this.loop);
-            if(User.maxMscore.length == 8){
+            if (User.maxMscore.length == 8) {
                 User.maxMscore.sort((a, b) => b - a);
-                if(pontos > User.maxMscore[0]){
+                if (pontos > User.maxMscore[0]) {
                     User.maxVscore[0] = timer;
                 }
             }
-            else{
+            else {
                 User.maxMscore.push(timer);
             };
-            axios.post(API_LOCATION+"/updateScore/data", {
+            axios.post(API_LOCATION + "/updateScore/data", {
                 docID: localStorage.getItem('AuthLogin'),
                 content: {
                     maxMscore: User.maxMscore,
-                    score: User.score+2
+                    score: User.score + 2
                 }
             }).then((resposta) => {
-                if(resposta.status == 200){
+                if (resposta.status == 200) {
                     console.log("Updated successful");
                 }
             }).catch((erro) => {
-                if(erro.status == 404){
+                if (erro.status == 404) {
                     console.log("AuthLogin not valid");
                     window.location.href = "index.html";
                 }

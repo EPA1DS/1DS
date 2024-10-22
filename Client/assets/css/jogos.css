@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 :root {
-    --primeiro--color:#aca185;
-    --segundo--color:#ffffff;
-    --terceiro--color:#d9b166;
+    --primeiro--color: #aca185;
+    --segundo--color: #ffffff;
+    --terceiro--color: #d9b166;
     --quarta--color: #8c6645;
     --quinta--color: black;
     --sexta--color: #837865;
@@ -17,19 +17,21 @@ body {
 }
 
 
-#corpo{
+#corpo {
     width: 100%;
-    
+
 }
 
-.game{
+.game {
     width: 90%;
     max-width: 300px;
 }
-canvas{
+
+canvas {
     outline: 1px solid black;
 }
-#resultado{
+
+#resultado {
     position: absolute;
     color: red;
     font-size: 1.5rem;
@@ -39,7 +41,7 @@ canvas{
     padding: 0;
     margin: 0;
     text-wrap: nowrap;
-    
+
 }
 
 #timer {
@@ -93,12 +95,12 @@ canvas{
 }
 
 .front {
-    background-image: url('../sprites/img/alok.jpg');
     transform: rotateY(180deg);
 }
 
 .back {
-    background-image: url('../sprites/img/yoda.jpg');
+    /* background-color: azure; */
+    background-image: url('../sprites/img/yoda-certo.jpeg');
     backface-visibility: hidden;
 }
 
