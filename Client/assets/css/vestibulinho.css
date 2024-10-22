@@ -1,0 +1,152 @@
+:root {
+    --primeiro--color: #aca185;
+    --segundo--color: #f2efdf;
+    --terceiro--color: #d9b166;
+    --quarta--color: #8c6645;
+    --quinta--color: black;
+    --sexta--color: #837865;
+    --set--color: #57402c;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url('https://www.nelsonkon.com.br/wp-content/uploads/2018/04/spadoni_aa_e_pedro_taddei_associados_centro_paula_souza_etec_nova_luz_IMG_8848.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+
+.sobre {
+    text-align: start;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.sobre h3, .sobre p {
+    color: #ffffff;
+    margin: 20px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: inline-block;
+    border-radius: 10px;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.sobre h2 {
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: inline-block;
+    border-radius: 10px;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+.sobre a {
+    color: #ffffff;
+    margin: 20px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: block;
+    border-radius: 10px;
+}
+
+#vestibulinho {
+    width: 100px;
+    margin: 20px;
+}
+
+.sobre h2 {
+    font-size: 2.5rem;
+    
+    color: #ffffff;
+
+}
+
+.sobre h3 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+    .sobre h2 {
+        font-size: 2rem;
+    }
+
+    .sobre h3 {
+        font-size: 1.5rem;
+    }
+
+    .sobre p {
+        font-size: 1rem;
+    }
+
+    .sobre {
+        padding: 10px;
+    }
+
+    .footer h2 {
+        font-size: 2rem;
+    }
+
+    .footer p {
+        font-size: 0.9rem;
+    }
+
+    #vestibulinho {
+        width: 120px;
+        margin: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sobre h2 {
+        font-size: 1.8rem;
+    }
+
+    .sobre h3 {
+        font-size: 1.2rem;
+    }
+
+    .sobre p {
+        font-size: 0.9rem;
+    }
+
+    .sobre {
+        padding: 5px;
+    }
+
+    .footer h2 {
+        font-size: 1.8rem;
+    }
+
+    .footer p {
+        font-size: 0.8rem;
+    }
+
+    #vestibulinho {
+        width: 100px;
+        margin: 10px;
+    }
+}
+
+

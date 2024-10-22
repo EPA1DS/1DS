@@ -1,0 +1,143 @@
+:root {
+    --primeiro--color:#aca185;
+    --segundo--color:#ffffff;
+    --terceiro--color:#d9b166;
+    --quarta--color: #8c6645;
+    --quinta--color: black;
+    --sexta--color: #837865;
+    --set--color: #57402c;
+}
+
+body {
+    height: 100vh;
+    background: var(--segundo--color);
+}
+
+
+/*logo e nome de usuário (div-top)*/
+
+.top {
+    height: 35%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (min-width:768px) {
+    .top {
+        height: 45%;
+    }
+}
+
+
+
+.text {
+    width: 90%;
+    max-width: 300px;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(236, 35, 35);
+    border-radius: 30px;
+    box-shadow: 5px 7px 5px rgba(0, 0, 0, 0.202);
+}
+
+/*bottom - scores*/
+
+.bottom {
+    height: 60%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    outline: 3px solid black;
+}
+
+.col-md {
+    height: 100%;
+    width: 100%;
+
+    padding: 7px;
+}
+
+.linha{
+    outline: 0.5px solid black;
+}
+@media (min-height:768px) {
+    .col-sm {
+        width: 25%;
+    }
+}
+
+.title {
+    width: 100%;
+    height: 15%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: black;
+    outline: solid black 2px;
+    text-align: center;
+}
+
+.score {
+    width: 100%;
+    height: 85%;
+}
+
+.row-score .col-md {
+    height: 12.5%;
+}
+
+.name {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+h1 {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.5rem;
+    font-weight: 550;
+    color: black;
+}
+
+h2 {
+    margin-top: 6px;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 25px;
+    font-weight: 550;
+    color: black;
+    color: white;
+}
+
+h3 {
+    margin-top: 6px;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+
+
+.tabela{
+    max-width: 300px;
+}

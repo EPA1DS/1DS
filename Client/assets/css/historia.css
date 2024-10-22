@@ -1,0 +1,138 @@
+:root {
+    --primeiro--color: #aca185;
+    --segundo--color: #ffffff;
+    --terceiro--color: #d9b166;
+    --quarta--color: #8c6645;
+    --quinta--color: black;
+    --sexta--color: #837865;
+    --set--color: #57402c;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--segundo--color);
+}
+
+
+
+/*a partir daqui, é o css de tudo abaixo da navbar*/
+.abaixo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-bottom: 10px;
+}
+
+@media (min-width:576px) {
+    .abaixo {
+        height: 70vh;
+    }
+}
+
+@media (min-width:992px) {
+    .abaixo {
+        height: 100vh;
+    }
+}
+
+.slides {
+    width: 70%;
+    margin-top: 10vh;
+}
+
+.texto {
+    background-color: rgba(0, 0, 0, 0.842);
+    color: white;
+    margin: 10px;
+    margin-bottom: 20px;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+
+.container h1 {
+    text-align: center;
+}
+
+p {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+h3, h1 {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+@media (max-width: 576px) {
+
+    .header {
+        position: fixed;
+        z-index: 1000;
+        width: 100%;
+    }
+
+    .icons {
+        width: 5vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+
+    #etec {
+        height: 8vw !important;
+        width: 12vw !important;
+        margin-left: 1vw !important;
+        margin-right: 1vw !important;
+    }
+    
+    .abaixo {
+        flex-direction: column;
+        display: flex;
+    }
+    
+    .texto {
+        order: 2;
+    }
+    
+    .slides {
+        order: 1;
+        z-index: 1;
+    }
+}
+
+/* corpo */
+
+.fotos {
+    display: flex;
+    width: 90%;
+    max-width: 550px;
+    filter: brightness(0.7);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 5vh;
+}
+
+
+.fotos:hover {
+    filter: saturate(2);
+    transform: scale(1.10);
+}
+
+.fotos img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+.container{
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: none;
+}

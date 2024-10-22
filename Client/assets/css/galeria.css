@@ -1,0 +1,42 @@
+:root {
+    --primeiro--color:#d9ceb0;
+    --sugundo--color:#ffffff;
+    --terceiro--color:#d9b166;
+    --quarta--color: #8c6645;
+    --quinta--color: black;
+    --sexta--color: #837865;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: var(--segundo--color);
+}
+
+/* card */
+
+.card {
+    height: 100%;
+    background-color: var(--quinta--color);
+    outline: solid black 1px;
+    box-shadow: 4px 4px 4px #00000047;
+}
+
+.card-body {
+    outline: solid black 1px;
+    padding: 0;
+}
+
+.card-title {
+    width: 100% !important;
+    height: 100% !important;
+    color: white !important;
+    text-align: center;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+

@@ -1,0 +1,109 @@
+:root {
+    --primeiro--color: #aca185;
+    --segundo--color: #f2efdf;
+    --terceiro--color: #d9b166;
+    --quarta--color: #8c6645;
+    --quinta--color: black;
+    --sexta--color: #837865;
+    --set--color: #57402c;
+}
+
+.header {
+    height: 10%;
+    margin-bottom: 10px;
+}
+
+
+
+.navbar {
+    background-color: var(--quinta--color);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    z-index: 100;
+}
+
+
+.navbar-nav {
+    width: 100%;
+    height: 100%;
+}
+
+.collapse {
+    display: flex;
+}
+
+.right {
+    width: 45%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.container-fluid {
+    padding: 0;
+}
+
+
+.navbar-collapse {
+    background: rgb(0, 0, 0);
+    width: 100%;
+}
+
+.navbar-toggler {
+    margin-right: 10px;
+}
+.navbar-toggler:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+.navbar-toggler-icon{
+    filter: invert(1);
+}
+
+h7 {
+    color: white;
+    transition: all 0.5s;
+
+    padding: 8px;
+
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+h7:hover {
+    color: rgb(180, 180, 180);
+    transition: all 0.5s;
+}
+
+.icons {
+    width: 2rem;
+    cursor: pointer;
+}
+.right{
+    display: flex;
+    gap: 5%;
+    
+}
+
+@media (max-width: 576px) {
+    .right {
+        margin-right: 5%;
+    }
+    #etec {
+        height: 8vw !important;
+        width: 12vw !important;
+        margin-left: 1vw !important;
+        margin-right: 1vw !important;
+    }
+}
+
+#etec {
+    width: 4rem;
+    margin-left: 0.5vw;
+    margin-right: 1vw;
+    cursor: pointer;
+}
