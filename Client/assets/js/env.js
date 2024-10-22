@@ -1,1 +1,1 @@
-const API_LOCATION = "https://f12e-2804-90-6400-33ba-b929-f08b-65c6-367c.ngrok-free.app";
+const API_LOCATION = "https://854c-2804-90-6400-33ba-f953-d15a-9191-1196.ngrok-free.app";
