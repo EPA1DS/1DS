@@ -20,14 +20,14 @@ if(AuthLogin){
     }).catch((erro) => {
         if(erro.status == 404){
             console.log("AuthLogin not valid");
-            window.location.href = "index.html";
+            window.location.href = "login.html";
         }
         else if (erro.status == 500) {
             console.log("Server error");
-            window.location.href = "index.html";
+            window.location.href = "login.html";
         }
     });
 }
 else{
-    window.location.href = "index.html";
+    window.location.href = "login.html";
 }
