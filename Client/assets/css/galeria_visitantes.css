@@ -23,7 +23,7 @@ body {
 }
 
 .foto-antiga {
-  filter: grayscale(1) blur(1px) contrast(1.2) sepia(1) hue-rotate(350deg) !important;
+  filter: sepia(80%) grayscale(50%) contrast(85%) brightness(90%) !important;
 }
 
 .bordaEscura{
