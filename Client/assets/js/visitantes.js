@@ -1,8 +1,10 @@
 var corpo = document.getElementById('corpo');
+var first = false;
 
 axios.post(API_LOCATION+"/visitantes/data").then((resposta) => {
     const images = resposta.data;
     images.forEach(image => {
+        if(first){
         var quadro = document.createElement('div');
         quadro.setAttribute('class', 'quadro col-lg-3 col-md-6 col-12 mb-5');
         var bordaEscura = document.createElement('div');
@@ -19,6 +21,8 @@ axios.post(API_LOCATION+"/visitantes/data").then((resposta) => {
         bordaEscura.appendChild(bordaClara);
         quadro.appendChild(bordaEscura);
         corpo.appendChild(quadro);
+        }
+        else{ first = true }
     });
     console.log("executou");
 }).catch((err) =>{
