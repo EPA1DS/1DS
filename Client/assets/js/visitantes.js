@@ -13,6 +13,7 @@ axios.post(API_LOCATION+"/visitantes/data").then((resposta) => {
         conteudo.setAttribute('class', 'Conteudo');
         var img = document.createElement('img');
         img.setAttribute("src", image.url);
+        img.setAttribute("class", "foto-antiga");
         conteudo.appendChild(img);
         bordaClara.appendChild(conteudo);
         bordaEscura.appendChild(bordaClara);
