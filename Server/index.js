@@ -18,7 +18,7 @@ app.use(express.json());
 
 
 initializeApp({
-  credential: cert(process.env.FIREBASE_CERT),
+  credential: cert("epa-1ds-firebase-adminsdk-zgid6-96da4c4f8c.json"),
   storageBucket: "gs://epa-1ds.appspot.com"
 })
 
