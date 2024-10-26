@@ -175,5 +175,6 @@ app.post('/feedback/data', async (req, res) => {
   }
 });
 
-export default app;
-
+app.listen(port, () => {
+    console.log(`Servidor rodando`);
+});
